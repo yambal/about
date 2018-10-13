@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>タイトル</title>
+  </head>
+  <body>
+    <div id="loading">Loading...</div>
+    <div class="hidden" id="loaded">
+      <div class="hidden" id="user-signed-in">
+        <div id="user-info">
+          <div id="photo-container"><img id="photo"></div>
+          <div id="name"></div>
+          <div id="email"></div>
+          <div id="phone"></div>
+          <div id="is-new-user"></div>
+        </div>
+        <p>
+          <button id="sign-out">Sign Out</button>
+          <button class="hidden" id="acount-link">Acount Link</button>
+        </p>
+      </div>
+      <div class="hidden" id="user-signed-out">
+        <div id="firebaseui-spa">
+          <div id="firebaseui-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/DialogflowController.js"></script>
+  </body>
+</html>
