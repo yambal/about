@@ -7,7 +7,7 @@ var _require = require("./es6/ApiAiClient.js"),
 
 var config = {
   app: {
-    token: "c94a385816024f36862208a37fadb67e",
+    token: "1d95ef13f8574d7491b77fd903172552",
     // <- enter your token here
     muted: false,
     // <- mute microphone by default
@@ -517,6 +517,7 @@ function () {
     this.options = options;
     this.uri = this.apiAiClient.getApiBaseUrl() + "query?v=" + this.apiAiClient.getApiVersion();
     this.requestMethod = _XhrRequest.default.Method.POST;
+    console.log(this.apiAiClient.getAccessToken());
     this.headers = {
       Authorization: "Bearer " + this.apiAiClient.getAccessToken()
     };
