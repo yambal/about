@@ -242,7 +242,7 @@ function (module, exports, __webpack_require__) {
     })(AVAILABLE_LANGUAGES = ApiAiConstants.AVAILABLE_LANGUAGES || (ApiAiConstants.AVAILABLE_LANGUAGES = {}));
 
     ApiAiConstants.VERSION = "2.0.0-beta.20";
-    ApiAiConstants.DEFAULT_BASE_URL = "https://api.api.ai/v1/";
+    ApiAiConstants.DEFAULT_BASE_URL = "https://cors-anywhere.herokuapp.com/https://api.api.ai/v1/";
     ApiAiConstants.DEFAULT_API_VERSION = "20150910";
     ApiAiConstants.DEFAULT_CLIENT_LANG = AVAILABLE_LANGUAGES.EN;
   })(ApiAiConstants = exports.ApiAiConstants || (exports.ApiAiConstants = {}));
